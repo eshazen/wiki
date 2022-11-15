@@ -20,8 +20,8 @@
   -->
 
 [About](pages/about.md)
-[Download](pages/download.md)
-[EDF](mdwiki/ProjectList.md)
+[EricHome](mdwiki/EricHome.md)
+[SiteMap](mdwiki/SiteMap.md)
 
 <!-- A more complex navigation example: ----------------------------------------
 
