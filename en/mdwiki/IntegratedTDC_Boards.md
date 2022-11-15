@@ -1,0 +1,160 @@
+# IntegratedTDC_Boards
+## IntegratedTDC Boards, with serial numbers, Firmware versions, and other important information
+
+
+| Board Serial Number | uC Firmware version | FPGA Firmware version| Current location | Bootloader? | Notes |
+| ----- ------ ------ | -- -------- ------- | ---- -------- -------| ------- -------- | ----------- | ----- |
+| 000 | v1.10 | 2016-04-05 | Fermilab | - | 2nd channel doesn't read out. |
+| 001 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 002 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 003 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 004 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 005 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 006 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 007 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 008 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 009 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 010 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 011 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 012 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 013 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 014 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 015 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 016 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 017 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 018 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 019 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 020 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 021 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 022 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 023 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 024 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 025 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 026 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 027 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 028 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 029 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 030 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 031 | v1.30 | 2016-06-06 | UCL | yes | |
+| 032 | v1.30 | 2016-06-06 | UCL | yes | |
+| 033 | v1.30 | 2016-06-06 | UCL | yes | |
+| 034 | v1.30 | 2016-06-06 | UCL | yes | |
+| 035 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 036 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 037 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 038 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 039 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 040 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 041 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 042 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 043 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 044 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 045 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 046 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 047 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 048 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 049 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 050 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 051 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 052 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 053 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 054 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 055 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 056 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 057 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 058 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 059 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 060 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 061 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 062 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 063 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 064 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 065 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 066 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 067 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 068 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 069 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 070 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 071 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 072 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 073 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 074 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 075 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 076 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 077 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 078 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 079 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 080 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 081 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 082 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 083 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 084 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 085 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 086 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 087 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 088 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 089 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 090 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 091 | v1.30 | 2016-06-06 | Fermilab | yes | Channel 5 is weird |
+| 092 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 093 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 094 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 095 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 096 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 097 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 098 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 099 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 100 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 101 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 102 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 103 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 104 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 105 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 106 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 107 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 108 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 109 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 110 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 111 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 112 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 113 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 114 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 115 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 116 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 117 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 118 | v1.10 | 2016-06-06 | Liverpool | yes | |
+| 119 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 120 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 121 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 122 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 123 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 124 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 125 | v1.30 | 2016-06-06 | Liverpool | yes | high pitch sound once fpgas are programmed |
+| 126 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 127 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 128 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 129 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 130 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 131 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 132 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 133 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 134 | v1.30 | 2016-06-06 | Fermilab | yes | Bad Noise Scans |
+| 135 | v1.30 | 2016-06-06 | Fermilab | yes | Bad Noise Scans |
+| 136 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 137 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 138 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 139 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 140 | v1.30 | 2016-06-06 | Liverpool | yes | |
+| 141 | v1.30? | ??? | Fermilab | yes? | DO NOT USE. Cannot talk to uC |
+| 142 | v1.10 | 2016-04-05 | Fermilab | yes | |
+| 143 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 144 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 145 | v1.30 | 2016-06-06 | Fermilab | yes | |
+| 146 | v1.30 | 2016-06-06 | BU | yes | |
+| 147 | v1.30 | 2016-06-06 | BU | yes | |
+| 148 | v1.30 | 2016-06-06 | BU | yes | |
+| 149 | v1.30 | 2016-06-06 | BU | yes | |
+
+
+*Firmware links*
+http://edf.bu.edu/svn/edf/G-2/NewElectronics/IntegratedTDC/Firmware/uC/integrated_tdc_board/tags/v1.30/

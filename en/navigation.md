@@ -21,6 +21,7 @@
 
 [About](pages/about.md)
 [Download](pages/download.md)
+[EDF](mdwiki/ProjectList.md)
 
 <!-- A more complex navigation example: ----------------------------------------
 
