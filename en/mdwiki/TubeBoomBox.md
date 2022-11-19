@@ -29,7 +29,7 @@ Boxology-
  * One port 1" ID 3" long
  * Two-layer chassis with two "floors" 6w x 8d x 9h.
  * Speakers hook on side of chassis with carrying handle
- * [Drawing](http://ohm.bu.edu/~hazen/TubeAmp/BoomBox/FRONT_MECH%20Model%20(1).pdf) of proposed layout
+ * [Drawing](http://ohm.bu.edu/~hazen/TubeAmp/BoomBox/FRONT_MECH%20Model%20(1\).pdf) of proposed layout
 
 Plywood cutting from 18" x 8' piece for speakers:
 
