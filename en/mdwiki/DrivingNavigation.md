@@ -11,3 +11,6 @@ Here's an easy route from Google Maps route (with custom options) to Osmand:
 4. Email file to self
 5. View file (XML) on phone, hit "share", open in OSMand
 
+Some routes:
+
+* [Four Sisters Owl Diner](https://theowldiner.com/) [Driving](https://goo.gl/maps/3P553jYpdXAu1h1w6)
