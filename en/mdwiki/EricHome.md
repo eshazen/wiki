@@ -23,7 +23,8 @@
 
 ### Ideas for new projects (tubes)
 
- * [6V6PPAmp](6V6PPAmp.md) -- 10WPC old-school 6V6 push-pull
+ * [OtherTubeAmps](OtherTubeAmps.md) -- collection page for ideas
+ * [6V6PPAmp](6V6PPAmp.md) -- 10WPC old-school 6V6 push-pull (partial PCB designs)
  * [NixieClock](NixieClock.md) -- old and new projects.  New version underway in late 2019!
  * [AllTubeClock](AllTubeClock.md) -- various ideas for an all-tube clock
  * [TubeRadios](TubeRadios.md) -- projects / repair info
@@ -33,7 +34,6 @@
  * [SoundForTV](SoundForTV.md) -- sound setup for TV
  * [6DJ8Phono](6DJ8Phono.md) -- partially layed-out PCBs
  * [CarTubeAmp](CarTubeAmp.md) -- this is totally crazy
- * [OtherTubeAmps](OtherTubeAmps.md) -- collection page for ideas
 
 ### Ideas for new projects (other)
 

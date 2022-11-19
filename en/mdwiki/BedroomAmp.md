@@ -11,11 +11,7 @@ A low power, simple option:  *1 W/ch*
    * http://diyaudioprojects.com/Tubes/6CY7-SET-Amplifier/ 6CY7 SET]
    * ([forum](http://diyaudioprojects.com/Forum/viewtopic.php?f=9&t=5222))
 
-Original designer measured 1.25W/ch with Edcor iron.  As built with
-the MPS transfomers and minimum-7's, it is OK for background listening
-(with iPhone as source) but not quite up to e.g. the 6T9 "boombox"
-("The maximum rated power output is about 4W with only a Watt or two
-of good output.")
+Original designer measured 1.25W/ch peak or 1W/ch at 5% with Edcor iron.  As built with the MPS transfomers and minimum-7's, it is OK for background listening (with iPhone as source) but not quite up to e.g. the 6T9 "boombox" (for which the designer says "The maximum rated power output is about 4W with only a Watt or two of good output.")
 
 Suggest in forum [here](http://diyaudioprojects.com/Forum/viewtopic.php?f=9&t=5222&start=80) to use an alternative output transformer, the [GXSE5-55K](https://www.edcorusa.com/gxse5-55k).  Another alternative would be OT8SE from [https://www.musicalpowersupplies.com/].  $25 ea on eBay from stock with $10 shipping.
 
