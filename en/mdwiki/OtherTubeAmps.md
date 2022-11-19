@@ -2,18 +2,19 @@
 
 ### 6336 SET Amp
 
-(The latest)[https://www.cascadetubes.com/the-6336-set-amp/] from Matt at Cascade.  Clean output up to 6.3W, max 8W.
+[The latest](https://www.cascadetubes.com/the-6336-set-amp/) from Matt at Cascade.  Clean output up to 6.3W, max 8W.
 
 Price/parts:
 
-| Quan | Item                | Each | Total | Notes               |
-|------|---------------------|-----:|------:|---------------------|
-| 1    | 6336 tube           |  $30 |   $30 | Average e-bay 11/22 |
-| 1    | GZ34 tube           |  $20 |   $20 | Tube Depot          |
-| 2    | 12AU7 tube          |  $20 |   $40 | New AES, T.Depot    |
-| 2    | Edcor GXSE15-8-2.5k |  $70 |  $140 | Output transformer  |
-| 1    | Edcor XPWR178-120   | $115 |  $115 | Power transformer   |
-|      |                     |      |  $345 | Total               |
+| Quan | Item                   | Each | Total | Notes               |
+|------|------------------------|-----:|------:|---------------------|
+| 1    | 6336 tube              |  $30 |   $30 | Average e-bay 11/22 |
+| 1    | GZ34 tube              |  $20 |   $20 | Tube Depot          |
+| 2    | 12AU7 tube             |  $20 |   $40 | New AES, T.Depot    |
+| 2    | Edcor GXSE15-8-2.5k    |  $70 |  $140 | Output transformer  |
+| 1    | Edcor XPWR178-120      | $115 |  $115 | Power transformer   |
+| 1    | Edcor CXC125-10H-200mA |  $79 |   $79 | Filter choke        |
+|      |                        |      |  $424 | Total               |
 
 Runs hot!  The 6336 dissipates around 79W!
 
