@@ -5,6 +5,12 @@
 
  * https://www.flitetest.com/articles/se5-biplane-modified-and-simplified-build
 
+### Miata
+
+ * [Mass Miata](https://massmiata.net/)
+ * [Osmand maps](https://osmand.net/)
+ * [MapstoGPX](https://mapstogpx.com/#)
+ * [DrivingNavigation](DrivingNavigation.md)
 
 ### Tube Amps
  * http://ohm.bu.edu/~hazen/TubeAmp/ (gallery of projects)
