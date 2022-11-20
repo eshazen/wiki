@@ -1,5 +1,23 @@
 # OtherTubeAmps
 
+### 6L6/KT88
+
+This is Matt (Cascade Tubes) latest effort.  See [project page](https://www.cascadetubes.com/the-6l6-spalted-alder-amp/).
+
+Price estimate for tubes and iron:
+
+| Quan | Item              | Each | Total | Notes  |
+|------|-------------------|-----:|------:|--------|
+| 2    | 6L6GC/KT88        |  $35 |   $70 |        |
+| 1    | 6SL7              |  $33 |   $33 |        |
+| 1    | GZ34              |  $22 |   $22 |        |
+| 2    | Edcor GXSE15-5K-8 |  $70 |  $140 |        |
+| 1    | Edcor XPWR178     | $115 |  $115 |        |
+| 1    | Triad C-14X       |  $20 |   $20 | Mouser |
+| 2    | Hammond 154M      |  $16 |   $32 | Mouser |
+|      |                   |      |  $432 |        |
+
+
 ### 6336 SET Amp
 
 [The latest](https://www.cascadetubes.com/the-6336-set-amp/) from Matt at Cascade.  Clean output up to 6.3W, max 8W.
