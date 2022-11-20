@@ -2,7 +2,7 @@
 
 ### 6L6/KT88
 
-This is Matt (Cascade Tubes) latest effort.  See [project page](https://www.cascadetubes.com/the-6l6-spalted-alder-amp/).
+This is Matt (Cascade Tubes) latest effort.  See [project page](https://www.cascadetubes.com/the-6l6-spalted-alder-amp/).  Seems similar in spirit to the 6336 below.  
 
 Price estimate for tubes and iron:
 
@@ -17,6 +17,7 @@ Price estimate for tubes and iron:
 | 2    | Hammond 154M      |  $16 |   $32 | Mouser |
 |      |                   |      |  $432 |        |
 
+Interstage cap maybe missing info: 0.1µf / 630VDC
 
 ### 6336 SET Amp
 
