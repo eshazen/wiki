@@ -1,15 +1,21 @@
-# ClockII_In12B
+# Nixie Clocks
+
+## 2004 version
+
+* 2004 version: http://ohm.bu.edu/~hazen/Nixie/
+
+## Nixie transistor clock
+
+* [NixieTransistorClock](NixieTransistorClock.md) (from kit: https://tube-clock.com/)
 
 ## In-12B clock built in 2018-2020
 
- * My AVR microcontroller clocks (this page has latest version)
-   * 2004 version: http://ohm.bu.edu/~hazen/Nixie/
-   * Github:  https://github.com/eshazen/nixie-clock-2
-   * SVN:  http://edf.bu.edu/svn/edf/EricHome/NixieClockII/ (obsolete)
-   * Nixie mount PCB:  http://edf.bu.edu/svn/edf/EricHome/NixieClockII/hardware/trunk/ExampleNixieHolder.pcb
-   * https://www.ebay.com/itm/D-Sub-Crimp-Contact-Pin-Female-50pcs-per-lot/372631469576?hash=item56c290fe08:g:YeQAAOSw9r1V9QwJ
-   * http://www.craigandheather.net/celenixieclock.html
- * [NixieTransistorClock](NixieTransistorClock.md) (from kit: https://tube-clock.com/)
+* Github:  https://github.com/eshazen/nixie-clock-2
+* SVN:  http://edf.bu.edu/svn/edf/EricHome/NixieClockII/ (obsolete)
+* Nixie mount PCB:  http://edf.bu.edu/svn/edf/EricHome/NixieClockII/hardware/trunk/ExampleNixieHolder.pcb
+* https://www.ebay.com/itm/D-Sub-Crimp-Contact-Pin-Female-50pcs-per-lot/372631469576?hash=item56c290fe08:g:YeQAAOSw9r1V9QwJ
+* http://www.craigandheather.net/celenixieclock.html
+
 
 <a href="http://ohm.bu.edu/~hazen/Nixie/New2019/mainboard_big.jpg"><img src="http://ohm.bu.edu/~hazen/Nixie/New2019/mainboard.jpg"></a>
 
