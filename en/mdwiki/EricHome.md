@@ -43,6 +43,7 @@
 
 ### Ideas for new projects (other)
 
+ * [ScopeClock](ScopeClock.md) CRT-based clock displays
  * [BathroomAudio](BathroomAudio.md) ideas for in-wall/ceiling audio
  * [ForthMachine](ForthMachine.md) ideas for a stack CPU
  * [GalBlaster](GalBlaster.md) tools to program GAL22V10 and friends
