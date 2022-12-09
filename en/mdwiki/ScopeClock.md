@@ -7,9 +7,11 @@
 * https://www.electronixandmore.com/projects/scopeclock/index.html
 * https://www.catahoulatech.com/index.php?product=KIT-0001
 
-Starting a project, apparently.  Ordered a 3BP1 3" CRT with P-3
-phosphor on eBay.  Considering to make a new PCB which is a remix of
-the Electronixandmore CRT driver and some version of AVR and DACs.
-Unlikely to be compatible with the Dutchtronix firmware as the PCF8563
-RTC seems unobtainable (though there are breakout boards available).
+Starting a project, apparently.  Ordered a 3BP1 3" CRT with P-3 phosphor on eBay.
+
+Now thinking about a tube-based CRT system.  
+The 6BP1 [data sheet](http://www.r-type.org/pdfs/3bp1.pdf) or
+[another](http://www.nj7p.org/Tubes/PDFs/Frank/049-RCA_Cuningham/3BP1A.pdf) suggests
+between 1500 and 2000V operating voltage.  Maybe a voltage-quadrupler
+on a 300V-380V transformer (1700-2200V)?
 
