@@ -15,3 +15,4 @@ The 6BP1 [data sheet](http://www.r-type.org/pdfs/3bp1.pdf) or
 between 1500 and 2000V operating voltage.  Maybe a voltage-quadrupler
 on a 300V-380V transformer (1700-2200V)?
 
+* https://www.antekinc.com/content/AS-05T320.pdf
