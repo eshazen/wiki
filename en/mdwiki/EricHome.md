@@ -68,6 +68,8 @@
 
 ### Reference
 
+ * [SPICE_and_Friends](SPICE_and_Friends.md)
+ * [Tubes_and_SPICE.md](Tubes_and_SPICE.md)
  * [Rob Robinette](https://robrobinette.com/Amp_Stuff.htm) amplifier pages
  * [WoodFurniture](WoodFurniture.md)
  * http://www.angelfire.com/electronic/funwithtubes/

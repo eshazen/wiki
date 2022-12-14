@@ -4,7 +4,7 @@ analog circuit simulators.
 
 # Software
 
- * [LTSPICE](http://www.linear.com/designtools/software/) from Linear Technology.  Works under Wine, highly recommended!
+ * [LTSPICE](http://www.linear.com/designtools/software/) from Linear Technology.  Works under Wine, highly recommended!.  [Local Copy](http://ohm.bu.edu/~hazen/DataSheets/LinearTech/LTspiceIV.exe) in case they delete it.
    * [LtSpiceNotes](LtSpiceNotes.md) -- some notes on how to incorporate user models, etc
  * [ngspice](http://sourceforge.net/projects/ngspice)
   SPICE [Linux](Linux.md)
