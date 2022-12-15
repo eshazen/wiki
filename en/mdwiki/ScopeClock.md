@@ -10,6 +10,10 @@ Started a PCB based on the "Electronixandmore" design but then started looking m
 
 Read up on the [Anderson monitor](http://www.taswegian.com/NBTV/forum/viewforum.php?f=17) in the NBTA forum and decided to do something similar.
 
+## Reference
+
+* Articles by [Jed Margolin](https://www.jmargolin.com/) on  [X-Y Monitors](https://www.jmargolin.com/xy/xymon.htm) and [Vector Generators](https://www.jmargolin.com/vgens/vgens.htm)
+
 ## CRT bias
 
 * [Schematic (pdf)](https://github.com/eshazen/scope-clock/blob/main/hardware/anderson_crt/anderson_crt.pdf)
