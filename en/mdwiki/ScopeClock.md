@@ -30,11 +30,14 @@ Also designed an X/Y deflection circuit based on 6SN7 (or 12SN7) tubes.
 
 ## Power Supply
 
-Thinking of a voltage multiplier of some sort starting with a reasonable transformer voltage.  Ordered one of the Anteks below.
+Designed around an Antek AS-1T175 I had around.  (2x115V, 2x175V, 2x6.3V, 100VA).
 
-* [Power Transformer candidate](https://www.antekinc.com/content/AS-05T320.pdf)
+* [Schematic PDF](https://github.com/eshazen/scope-clock/blob/main/hardware/psu/psu.pdf)
 
-Maybe a quadrupler on the 300 or 320V winding and a tripler on the second 115V winding?
+* 8-stage Cockroft-Walton multipler on the 175 (simulated ~1.3kV output with 6V pk-pk ripple).
+* Voltage doubler on the other 175 (simulated ~340V).
+* 5V and 3.3V on first 6.3V winding
+* 2nd 6.3V for CRT filament.
 
 ## Display control
 
