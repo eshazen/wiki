@@ -25,6 +25,8 @@ Read up on the [Anderson monitor](http://www.taswegian.com/NBTV/forum/viewforum.
 Also designed an X/Y deflection circuit based on 6SN7 (or 12SN7) tubes.
 
 * [Schematic (pdf)](https://github.com/eshazen/scope-clock/blob/main/hardware/deflection_amp/deflection_amp.pdf)
+* [PCB layout (png)](https://github.com/eshazen/scope-clock/blob/main/hardware/deflection_amp/deflection_amp_pcb.png)
+* [PCB layout 3D (png)](https://github.com/eshazen/scope-clock/blob/main/hardware/deflection_amp/deflection_amp_pcb_3D.png)
 
 ## Power Supply
 
