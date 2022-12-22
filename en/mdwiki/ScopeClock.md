@@ -1,6 +1,7 @@
 # Scope Clocks
 
-This is a silly project to develop a CRT clock using mostly vacuum tubes for the analog circuitry.  See [ScopeClockNotes](ScopeClockNotes.md) for other's projects.
+This is a silly project to develop a CRT clock using mostly vacuum tubes for the analog circuitry.  See [ScopeClockNotes](ScopeClockNotes.md) for other's projects.  
+See [ScopeClockBuildLog](ScopeClockBuildLog.md) for blow-by-blow build information.
 
 * Github: https://github.com/eshazen/scope-clock
 
