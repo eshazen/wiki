@@ -42,4 +42,10 @@ Designed around an Antek AS-1T175 I had around.  (2x115V, 2x175V, 2x6.3V, 100VA)
 
 ## Display control
 
-Vector graphics drive from some sort of CPU.  Maybe a Z80?
+Vector graphics drive from some sort of CPU.  Maybe a Z80?  The
+Calculator CPU could work It has 32K EEPROM and 32K RAM with sort of
+minimal I/O- 4 addresses of 8 bit I/O plus 5 bits latched output and 7 bits buffered input.
+
+Thinking about an analog ramp system similar to the "microvec" described in a [byte article](https://github.com/eshazen/scope-clock/blob/main/Data/byte_microvec.pdf).  This uses an 8-bit DAC to store one endpoint on a S/H cap and then an R/C ramp to the other endpoint.  His system worked well with a 4MHz Z80 and there is even code one could pilfer.
+
+An interesting enhancement would be to use constant current instead of just an R/C, and to somehow automatically advance to the next vector when the current one is complete.
