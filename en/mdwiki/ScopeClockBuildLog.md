@@ -1,5 +1,31 @@
 # Scope Clock Build Log
 
+**2022-12-29** Debugging
+
+Works pretty well.  Added a two-stage RC low-pass filter on +360  (R=200 5W, C=100uF).  Changed the Cathode supply (nominally -1500V) to a clip and like it pretty well at half way up the chain, so around -800V.  That way we stay in the linear range of the deflection amps.
+
+The focus is a lot better at -1500V though or even -1200V so maybe some work on the deflection amps to improve linearity would be helpful.
+
+Input voltage range is about 3V pk-pk (+/-1.5V) for a reasonable full scale.  Probably the drive circuit should be powered by +/-5V with gain/offset POTs.
+
+![prototype photo](https://github.com/eshazen/scope-clock/blob/main/pix/overview2_800V_sm.jpg)
+
+Thinking about Z80 logic.  
+
+Looking at 5V, parallel interface DACs with 8/10/12 bits.  8 bits would be fine with gain/offset adjust pots, so probably we should just go with the DAC08 and call it a day.  
+
+Another option:  MAX503 (MAX530) is a nice 10-bit (12-bit) option with a buffered voltage output.  Can do +/-2.048V with no op-amp.  Settling time ~25us though (13kHz BW).  This would connect directly to the LED port on the retro-25 CPU.
+
+
+
+**2022-12-27** Debugging
+
+HV and LV working.  Diff amp working with gain of ~60.
+
+"Brilliance" adj not working, but transistor Q1 is ECB whereas layout is "EBC".  Patched up PCB.
+
+Need to put a bleeder resistor on the 1.4kV.
+
 **2022-12-22** Catching up
 
 PCBs received for CRT bias [schem](https://github.com/eshazen/scope-clock/blob/main/hardware/anderson_crt/anderson_crt.pdf) and deflection amp [schem](https://github.com/eshazen/scope-clock/blob/main/hardware/deflection_amp/deflection_amp.pdf). Bias board assembled.  Waiting on parts for deflection amp.
