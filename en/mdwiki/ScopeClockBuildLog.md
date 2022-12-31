@@ -10,13 +10,11 @@ Input voltage range is about 3V pk-pk (+/-1.5V) for a reasonable full scale.  Pr
 
 ![prototype photo](https://github.com/eshazen/scope-clock/blob/main/pix/overview2_800V_sm.jpg)
 
-Thinking about Z80 logic.  
+Thinking about Z80 logic.
 
 Looking at 5V, parallel interface DACs with 8/10/12 bits.  8 bits would be fine with gain/offset adjust pots, so probably we should just go with the DAC08 and call it a day.  
 
 Another option:  MAX503 (MAX530) is a nice 10-bit (12-bit) option with a buffered voltage output.  Can do +/-2.048V with no op-amp.  Settling time ~25us though (13kHz BW).  This would connect directly to the LED port on the retro-25 CPU.
-
-
 
 **2022-12-27** Debugging
 
