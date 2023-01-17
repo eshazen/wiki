@@ -1,5 +1,11 @@
 # Scope Clock Build Log
 
+**2023-01-16** Z80 and software
+
+Z80 and DAC interface boards in and mostly assembled.  The Z80 is running (at least "halt" runs).  Using the old Arduino EEPROM programmer and some cheap 28C256 EEPROMs from Jameco.
+
+It would be somewhat nice to get UMON running on the bare CPU.
+
 **2022-12-29** Debugging
 
 Works pretty well.  Added a two-stage RC low-pass filter on +360  (R=200 5W, C=100uF).  Changed the Cathode supply (nominally -1500V) to a clip and like it pretty well at half way up the chain, so around -800V.  That way we stay in the linear range of the deflection amps.
