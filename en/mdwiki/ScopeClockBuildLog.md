@@ -4,7 +4,10 @@
 
 Z80 and DAC interface boards in and mostly assembled.  The Z80 is running (at least "halt" runs).  Using the old Arduino EEPROM programmer and some cheap 28C256 EEPROMs from Jameco.
 
-It would be somewhat nice to get UMON running on the bare CPU.
+It would be somewhat nice to get UMON running on the bare CPU.  I used bit-bang serial successfully but here are some alternatives to consider:
+
+* [Ganssle big-bang article from 1991](http://www.ganssle.com/articles/auart.htm)
+* [Steve Justin github](https://github.com/SteveJustin1963/tec-BIT-BANG)
 
 **2022-12-29** Debugging
 
