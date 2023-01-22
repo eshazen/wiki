@@ -1,5 +1,38 @@
 # Scope Clock Build Log
 
+## TO Do
+
+* cut trace and rewire DAC A0/A1 to LED3
+* burn a new EEPROM which goes straight to UMON
+
+## Build Log
+
+**2023-01-22** working on Z80
+
+Built and programmed a calculator boot rom.  Modified slightly the boot loader in 
+`software/bootloader/ser_19200_boot.asm` to include (for now) only UMON in the flash table.
+`make` produces `eeprom-umon.hex` which is programmed using `fast_prog.ino` on the arduino programmer and `software/sio/hex_prog.c` to upload the file (4800 baud).
+
+The EEPROM programming is a bit unreliable... took several tries to get through the whole file.  Maybe the timeout is too short for these EEPROMs?
+
+Note that the calculator code is tuned for a 16MHz CPU clock while we're running at 4MHz.  This means 19200 baud is now 4800 for the bit-bang serial, and more annoyingly the 10s startup delay for the boot loader is now 40s.  Create a tiny program which can bypass the delay.  For a quick startup:
+
+```
+   (power-up the board, observe '*')
+   $ .../sio/hex_binary .../testio/zout/booty.hex 4800
+```
+
+This will immediately start UMON.
+
+
+**2023-01-21**  Hardware tests/fixes
+
+* Jumper the UART for 9600 baud and write a test program `software/testio/test_uart.asm`.
+This sends data on the UART Tx and seems to work.
+* Start on DAC testing.  Find that there is a missing connection the the schematic,
+and that pins 22-23 need to be jumpered on U8 and U9 (DAC chips)
+* A0 is re-used for DAC A0 and the '138 decoder.  This doesn't work.  So, need to connect another spare latch signal (e.g. LED3 or U3 pin 10) to the A0/A1 on the DACs
+
 **2023-01-16** Z80 and software
 
 Z80 and DAC interface boards in and mostly assembled.  The Z80 is running (at least "halt" runs).  Using the old Arduino EEPROM programmer and some cheap 28C256 EEPROMs from Jameco.
