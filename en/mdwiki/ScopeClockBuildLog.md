@@ -2,6 +2,7 @@
 
 ## TO Do
 
+* commission UART so we can debug other hw more easily
 * cut trace and rewire DAC A0/A1 to LED3
 * burn a new EEPROM which goes straight to UMON
 
