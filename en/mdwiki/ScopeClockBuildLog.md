@@ -1,8 +1,11 @@
 # Scope Clock Build Log
 
+Up: [ScopeClock](ScopeClock.md)
+
 ## TO Do
 
-* cut trace and rewire DAC A0/A1 to LED3
+* Debug UART
+* Port newer UMON features (register edit/dump)
 * burn a new EEPROM which goes straight to UMON
 
 ## Build Log
