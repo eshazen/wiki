@@ -5,10 +5,19 @@ Up: [ScopeClock](ScopeClock.md)
 ## TO Do
 
 * Debug UART
-* Port newer UMON features (register edit/dump)
-* burn a new EEPROM which goes straight to UMON
+* (burn a new EEPROM which goes straight to UMON)
+* Add a generic umon 'F' which calls a jumptable function
+from a user-specified address for debugging libraries
 
 ## Build Log
+
+**2023-01-28** working on UMON
+
+Rewrote a bit as `umon_nobase_new.asm`.
+
+* Added back register display/edit.
+* Fixed bit-bang serial routines so they preserve register 00 bits 0-6 set with umon 'Z' commands.
+* 'G' (goto) command now works like breakpoint (restore regs, push breakpoint addr to stack) so it can be used to call subroutines
 
 **2023-01-22** working on Z80
 
