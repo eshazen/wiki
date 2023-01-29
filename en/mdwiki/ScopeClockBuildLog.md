@@ -11,6 +11,31 @@ from a user-specified address for debugging libraries
 
 ## Build Log
 
+**2023-01-29** line drawing, z88dk
+
+Wrote an 8-bit version of Bresenham's algorithm in C.
+Seems to work, but requires 16-bit arithmetic for the error calcs.
+Maybe we should just try it in C?
+
+Reviving Z88dk.  Went to `work/z88dk` and did a `git pull`. Then
+
+```  $ sudo apt-get install build-essential dos2unix libboost-all-dev \
+  texinfo texi2html libxml2-dev subversion bison flex zlib1g-dev m4 \ 
+  libtemplate-perl libtemplate-plugin-yaml-perl libfile-slurp-perl ragel \
+  re2c curl
+```
+
+See [forum post](https://spectrumcomputing.co.uk/forums/viewtopic.php?p=88866).
+
+Then `$ ./build.sh -C` for a clean build.  Takes a long time.
+
+
+**2023-01-28** DACs
+
+Got DACs working.  Needed to connect GND pins on U9, fix software.
+Now we have a nice range from 400H (-2.5V) to C00H (+2.5V).
+Umon has an 's' command to set the DACs.
+
 **2023-01-28** working on UMON
 
 Rewrote a bit as `umon_nobase_new.asm`.
