@@ -9,6 +9,19 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## Build Log
 
+**2023-01-29** tests and issues
+
+Got the DACs working and connected to the CRT.
+Some pretty significant issues:
+
+* X and Y DACs need to update at the same time.
+* Current software is slow, takes around 250uS to update both DACs
+
+Some thoughts:
+
+* route A1, A2 from the CPU board up on a couple of the lines on the keyboard connector, so we can do proper decoding in the '138.  This would speed things up a lot
+* wire some logic so nCS=H and nLDAC=L to update both DACs simultaneously
+
 **2023-01-29** line drawing, z88dk
 
 Wrote an 8-bit version of Bresenham's algorithm in C.
