@@ -6,8 +6,6 @@ Up: [ScopeClock](ScopeClock.md)
 
 * Debug UART
 * (burn a new EEPROM which goes straight to UMON)
-* Add a generic umon 'F' which calls a jumptable function
-from a user-specified address for debugging libraries
 
 ## Build Log
 
@@ -19,7 +17,8 @@ Maybe we should just try it in C?
 
 Reviving Z88dk.  Went to `work/z88dk` and did a `git pull`. Then
 
-```  $ sudo apt-get install build-essential dos2unix libboost-all-dev \
+```  
+  $ sudo apt-get install build-essential dos2unix libboost-all-dev \
   texinfo texi2html libxml2-dev subversion bison flex zlib1g-dev m4 \ 
   libtemplate-perl libtemplate-plugin-yaml-perl libfile-slurp-perl ragel \
   re2c curl
@@ -33,7 +32,7 @@ Then `$ ./build.sh -C` for a clean build.  Takes a long time.
 **2023-01-28** DACs
 
 Got DACs working.  Needed to connect GND pins on U9, fix software.
-Now we have a nice range from 400H (-2.5V) to C00H (+2.5V).
+Now we have a nice range from 400H (-2.5V) to C00H (+2.5V) for both X and Y.
 Umon has an 's' command to set the DACs.
 
 **2023-01-28** working on UMON
@@ -43,6 +42,8 @@ Rewrote a bit as `umon_nobase_new.asm`.
 * Added back register display/edit.
 * Fixed bit-bang serial routines so they preserve register 00 bits 0-6 set with umon 'Z' commands.
 * 'G' (goto) command now works like breakpoint (restore regs, push breakpoint addr to stack) so it can be used to call subroutines
+* Added `F` which calls a jumptable function using stored regs, checking for end of table marked with `JP 0`.  `J` sets the jumptable start.  
+* Started on history recall, only partially implmented.  `gets` now returns on `^P` and `^N` storing in buffer, and `^P` runs the previous command.  There is code to push and pop the history stack but still needs some work.
 
 **2023-01-22** working on Z80
 
