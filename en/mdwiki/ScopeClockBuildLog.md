@@ -9,6 +9,50 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## Build Log
 
+**2023-01-30** speed
+
+Looking at DAC speed-up options.  Currently it takes around 250uS (1000T!) per X/Y update.  Here are a few options using OUTI and OTIR:
+
+* Address lines with separate ports for each.  This involves bringing up some wires from the CPU board.
+
+```
+   ; output a list from HL, 4 decoded ports, separate LDAC port
+loop:
+   LD    C, xxH      ; set C to DAC X LSB
+   OUTI              ; 16T  output DAC X LSB
+   INC   C           ;  4T  point to DAC X MSB
+   OUTI              ; 16T
+   INC   C           ;  4T
+   OUTI              ; 16T
+   INC   C           ;  4T
+   OUTI              ; 16T
+   OUT   (xx),A      ; 11T  activate LDAC on it's own port
+                     ; 87T  loop total
+
+   DJNZ  loop        ; 13T
+   ;         Total   ; 100T  25us (40kHz)
+```   
+
+Logic to sequence through 4 ports automatically.
+LDAC is either another write to same port or a different one.
+
+
+```
+   ; output a list from HL
+   OUTI              ; 16T  DAC X LSB
+   OUTI              ; 16T  DAC X MSB
+   OUTI              ; 16T  DAC Y LSB
+   OUTI              ; 16T  DAC Y MSB
+   OUT   (xx),A      ; 11T  activate LDAC on it's own port
+                     ; 75T  loop total
+					 
+   DJNZ  loop        ; 13T
+   ;         Total   ; 88T  22us (45.4kHz)            					 
+```
+
+Either of these is a huge win.  Kind of prefer the second one as it doesn't
+involve modifying the CPU board.
+
 **2023-01-29** tests and issues
 
 Got the DACs working and connected to the CRT.
@@ -21,6 +65,7 @@ Some thoughts:
 
 * route A1, A2 from the CPU board up on a couple of the lines on the keyboard connector, so we can do proper decoding in the '138.  This would speed things up a lot
 * wire some logic so nCS=H and nLDAC=L to update both DACs simultaneously
+
 
 **2023-01-29** line drawing, z88dk
 
