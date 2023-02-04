@@ -4,10 +4,37 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## TO Do
 
-* Debug UART
-* (burn a new EEPROM which goes straight to UMON)
+* get fast DAC mod working
 
 ## Build Log
+
+**2023-02-04**
+
+Updated UMON and bootloader.  Bootloader now has 6s delay, umon updated to `umon_new`.
+
+
+**2023-02-03**
+
+Added a '139 and '161 to the board to (in principle) allow for automatically loading 4 bytes into the X and Y DACs with 4 successive I/O writes.  Doesn't work.
+
+Here is the new address table
+
+| Q0 | A0 | Q1 | Function | Dir | Port | Zero | Comments                            |
+|----|----|----|----------|-----|------|------|-------------------------------------|
+| 0  | 0  | 0  | UART RxD | R   | 40   | 0    | Read UART Rx data register          |
+| 0  | 0  | 1  | UART TxD | W   | 40   | 1    | Write UART Tx data register         |
+| 0  | 1  | 0  | UART ST  | R   | 41   | 0    | Read UART status                    |
+| 0  | 1  | 1  | LED Wr   | W   | 41   | 1    | Write LEDs                          |
+| 1  | 0  | 0  | -        | R   | 40   | 2    | -                                   |
+| 1  | 0  | 1  | nLDAC    | W   | 40   | 3    | Reset DAC addr, assert nLDAC        |
+| 1  | 1  | 0  | -        | R   | 41   | 2    | 0                                   |
+| 1  | 1  | 1  | nDAC     | W   | 41   | 3    | Write successive DAC data bytes (4) |
+|    |    |    |          |     |      |      |                                     |
+
+### EEPROM programming:
+
+Increased retry count in fast_prog.ino from 100 to 1000, still unreliable.
+Need to look into this a bit.
 
 **2023-01-30** speed
 
@@ -107,7 +134,11 @@ Rewrote a bit as `umon_nobase_new.asm`.
 
 Built and programmed a calculator boot rom.  Modified slightly the boot loader in 
 `software/bootloader/ser_19200_boot.asm` to include (for now) only UMON in the flash table.
-`make` produces `eeprom-umon.hex` which is programmed using `fast_prog.ino` on the arduino programmer and `software/sio/hex_prog.c` to upload the file (4800 baud).
+`make` produces `eeprom-umon.hex` which is programmed using `fast_prog.ino` on the arduino programmer and `software/sio/hex_prog.c` to upload the file (4800 baud).  Command line is:
+
+```
+  $ ../sio/hex_prog eeprom-umon.hex
+```  
 
 The EEPROM programming is a bit unreliable... took several tries to get through the whole file.  Maybe the timeout is too short for these EEPROMs?
 
