@@ -8,9 +8,18 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## Build Log
 
+**2023-02-08**
+
+Trying to get RTC working.  No luck so far.  Probably setup/hold time not being met
+due to the '245 buffer being enabled by `nLED2` and BD0 being used for `SDI`.
+
+Wired `SDI` to `LED3`.
+
 **2023-02-04**
 
 Updated UMON and bootloader.  Bootloader now has 6s delay, umon updated to `umon_new`.
+
+Fixed (?) the hardware.  nCS needs to be tied to nWR so nCS is high when nLDAC is asserted.  It seems to work now.
 
 
 **2023-02-03**
