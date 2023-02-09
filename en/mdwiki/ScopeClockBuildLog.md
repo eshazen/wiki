@@ -2,18 +2,35 @@
 
 Up: [ScopeClock](ScopeClock.md)
 
-## TO Do
+## TO DO
 
-* get fast DAC mod working
+### Power supply
+
+* Make sure all the random resistors on the prototype are included
+* Add power-up and power-down sequence control logic
+
+### DAC board
+
+* Carefully review all the ECOs and include them
 
 ## Build Log
+
+**2023-02-09***
+
+`clock_v1.asm` works!
+
+`rtc_fun.asm` has functions `set_rtc` and `get_rtc` for setting and retrieving the time.
+This was slightly troublesome because the clock stores time as BCD and for the rest of
+the logic we need integers.  Wrote generic functions `int_to_bcd` and `bcd_to_int` which
+could be useful elsewhere (e.g. if we implement the alarms or something)
 
 **2023-02-08**
 
 Trying to get RTC working.  No luck so far.  Probably setup/hold time not being met
 due to the '245 buffer being enabled by `nLED2` and BD0 being used for `SDI`.
 
-Wired `SDI` to `LED3`.
+Wired `SDI` to `LED3`.  Now all is good.  There was also a software bug which
+might have been the problem, but having `SDI` as a latched output seems safer.
 
 **2023-02-04**
 
