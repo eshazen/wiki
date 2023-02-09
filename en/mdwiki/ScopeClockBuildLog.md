@@ -4,14 +4,14 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## TO DO
 
-### Power supply
-
-* Make sure all the random resistors on the prototype are included
-* Add power-up and power-down sequence control logic
-
-### DAC board
-
-* Carefully review all the ECOs and include them
+* Power Supply board
+  * Make sure all the random resistors on the prototype are included
+  * Add power-up and power-down sequence control logic
+* DAC board
+  * Carefully review all the ECOs and include them
+  * update layout, re-spin
+* EEPROM programming
+  * figure out what's wrong
 
 ## Build Log
 
@@ -45,7 +45,7 @@ Added a '139 and '161 to the board to (in principle) allow for automatically loa
 
 Here is the new address table
 
-| Q0 | A0 | Q1 | Function | Dir | Port | Zero | Comments                            |
+| Q1 | A0 | Q0 | Function | Dir | Port | Zero | Comments                            |
 |----|----|----|----------|-----|------|------|-------------------------------------|
 | 0  | 0  | 0  | UART RxD | R   | 40   | 0    | Read UART Rx data register          |
 | 0  | 0  | 1  | UART TxD | W   | 40   | 1    | Write UART Tx data register         |
