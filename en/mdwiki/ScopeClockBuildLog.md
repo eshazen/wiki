@@ -4,9 +4,6 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## TO DO
 
-* Power Supply board
-  * Make sure all the random resistors on the prototype are included
-  * Add power-up and power-down sequence control logic
 * DAC board
   * Carefully review all the ECOs and include them
   * update layout, re-spin
@@ -14,6 +11,16 @@ Up: [ScopeClock](ScopeClock.md)
   * figure out what's wrong
 
 ## Build Log
+
+**2023-02-23**
+
+Testing PSU.  Relay has a couple of mistakes, so HV is always on!  See ECOs.
+Otherwise all seems to be well.  Wired up with two surplus 12V transformers
+for +12 and -5V.  Relay works.
+
+**2023-02-19**
+
+Power supply board and parts here!  Put together a board.  Ordered a bunch of crimp connectors and housings from DK. 
 
 **2023-02-09***
 
