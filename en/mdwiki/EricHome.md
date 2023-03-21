@@ -11,6 +11,7 @@
  * [Osmand maps](https://osmand.net/)
  * [MapstoGPX](https://mapstogpx.com/#)
  * [DrivingNavigation](DrivingNavigation.md)
+ * [MiataInfo](MiataInfo.md)
 
 ### Tube Amps
  * http://ohm.bu.edu/~hazen/TubeAmp/ (gallery of projects)
