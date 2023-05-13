@@ -12,6 +12,26 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## Build Log
 
+**2023-05-13**
+
+Starting up again.  How/when is the HV supply supposed to be enabled?
+Input on J15 has a pull-down, but is a MOSFET gate which can handle +/-20V.
+
+CPU won't start reliably from EEPROM.  Not sure what is up.
+Try reprogramming the EEPROM from `software/bootloader/eeprom-umon.hex`.
+It verifies, but no improvement.
+
+Turns out the +5V supply has huge ripple.  The "12V" out of the PS has
+60Hz of close to 6V pk-pk!  Switch back to the Siglent 5V for now.
+Maybe C13 needs to be much larger?
+
+Meanwhile, SMOKE!  Try to move the voltage select jumper on J14 (1-5
+to 1-4) with the HV on and there is a huge bang and caps C1, C3 and
+perhaps others smoke.  Shut everything off.  Then move the jumper back
+to 1-5 and power up again.  This time R1 literally catches fire, then
+arcs over.  Hope it gave it's life to save the transformer!  Need to
+order some new caps and try again another day.  Sigh.
+
 **2023-02-23**
 
 Testing PSU.  Relay has a couple of mistakes, so HV is always on!  See ECOs.
