@@ -12,6 +12,11 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## Build Log
 
+**2023-05-14**
+
+Replaced all diodes, rectifiers and caps in the 1200V multiplier.
+Patched the R6-D1 trace under R1 where it had melted.
+
 **2023-05-13**
 
 Starting up again.  How/when is the HV supply supposed to be enabled?
