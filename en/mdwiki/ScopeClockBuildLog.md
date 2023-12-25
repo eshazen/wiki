@@ -15,6 +15,13 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## Build Log
 
+**2023-02-13**
+
+Crashes occurring.  Could be passing 12h but maybe other times.
+Some notes:  V(BAT) should be grounded if not used.
+
+
+
 **2023-02-09***
 
 `clock_v1.asm` works!
