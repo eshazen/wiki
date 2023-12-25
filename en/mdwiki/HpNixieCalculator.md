@@ -1,12 +1,17 @@
 # HpNixieCalculator
-Ordered 15 IV-6 VFD tubes for a next-gen retro calculator.  Need a new display board, reuse old keyboard part and CPU.
 
-See https://github.com/eshazen/retro-25/tree/master/notes/VFD-Display
+Built a VFD version of HP-25.   See https://github.com/eshazen/retro-25/tree/master/notes/VFD-Display
 
-Other observations.  Looking at Japanese IV-6 breakout board and Eagle design from Osh Park, looks like 32 mil holes on a 0.3-0.34 diameter circle are good.  Front-face is either between pins 8 and 9 or pin 9 depending on who you believe.  Spacing is around 0.538 (13.7mm) (Japan).  Data sheet says tubes are 13mm max diameter.
+Thinking about another thing- an HP-16C clone with some sort of cool 7-segment display.
+Display ideas:
+
+* Just build another IV-6 VFD tube display.  They're pretty cool.
+* Panaplex.  These are gas-discharge (neon) 7-seg displays; quite a few with 12 digits made
+  * Pandicon(TM): ZM1500, ZM1200 
+* Mechanical 7-segment display.  Cool idea but hard to make small
+* Home-made 7-segment using tiny SMT LEDs.  Hmm...
 
 Driver options:
-
 
 | *Chip* | *Package* | *No Req'd* | *Notes* | _Price_' |
 | ------ | --------- | --- ------ | ------- | -------- |

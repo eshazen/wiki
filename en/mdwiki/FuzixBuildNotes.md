@@ -5,6 +5,27 @@ Trying to build FUZIX for z80pack.
  * Clone Alan's git https://github.com/EtchedPixels/FUZIX
    * https://github.com/EtchedPixels/FUZIX/commit/f5de5a8da1456e387ba0330d6e6e85e3f6ad76e3
 
+**2023-03-06**
+
+To start:
+```
+  $ cd ...FUZIX
+  $ make -j 8 |& tee logfile.txt      # takes ~ 30+ min
+  $ cd Images/z80pack
+  $ cp hd-fuzix.dsk ~/src/z80pack-1.36/cpmsim/disks/library
+  $ cd ~/src/z80pack-1.36/cpmsim
+  $ ./eric-new
+```
+
+Works ok-ish.  There's a C compiler of sorts in `/usr/bin/sccz80` but no library or assembler I can find.
+
+**2023-02-16**
+
+Starting again.  Updated Ubuntu to 22.04 and reinstall sdcc from repo.
+Update FUZIX, now ...6c61cc1f95b3450.
+
+Instally byacc.  Set target to z80pack and build with `make all -j 8 |& tee build_log.txt`.
+
 *2020-11-25*
 
 Filesystem seems to get borked whenever we try *vi /etc/passwd*.  Maybe should be using vile?

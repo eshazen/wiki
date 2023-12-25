@@ -11,6 +11,7 @@
  * [Osmand maps](https://osmand.net/)
  * [MapstoGPX](https://mapstogpx.com/#)
  * [DrivingNavigation](DrivingNavigation.md)
+ * [MiataInfo](MiataInfo.md)
 
 ### Tube Amps
  * http://ohm.bu.edu/~hazen/TubeAmp/ (gallery of projects)
@@ -43,6 +44,7 @@
 
 ### Ideas for new projects (other)
 
+ * [HexCalc](HexCalc.md) possible hand-held programmer's calculator
  * [ScopeClock](ScopeClock.md) CRT-based clock displays
  * [BathroomAudio](BathroomAudio.md) ideas for in-wall/ceiling audio
  * [ForthMachine](ForthMachine.md) ideas for a stack CPU
