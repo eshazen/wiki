@@ -12,6 +12,12 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## Build Log
 
+**2023-12-25**
+
+How to test?  Relay must be active to turn on HV, requires 12V plus
+a logic signal.  Solder a wire on J7 pin 1 which can be jumpered
+to the top of R1 for bench tests.
+
 **2023-05-14**
 
 Replaced all diodes, rectifiers and caps in the 1200V multiplier.
