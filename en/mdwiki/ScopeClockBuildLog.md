@@ -12,6 +12,84 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## Build Log
 
+**2023-12-29**
+
+More case ideas:
+
+Hammond chassis with transformers underneath and wiring hidden.
+Metal screen covering dangerous stuff.  Nice idea, but there isn't an
+ideal size.  
+See [hammond 1441 chassis list.](https://www.hammfg.com/electronics/small-case/chassis/1441).
+
+Toroid is about 2-1/4 thick with wiring, so we need a 3" chassis,
+chassis up on feet or mount on top.  There is a 12x10x3 aluminum model
+(1444-12103) and also one from Bud (AC-413).
+
+Everything fits on a 17 x 12 chassis flat.  Could be a 2" high since toroid is
+on top.  Max height above chassis about 4-1/2 inches.
+
+![3d_17x12](attachments/3d_wide_case.png)
+
+![top_17x12](attachments/top_17x12.png)
+
+This is great but the hammond chassis is $50.  How about just a metal
+plate on a wood base?  Hammond chassis cover 17x12 is $20.
+
+**2023-12-28**
+
+Looking at a new case design.
+
+Mounting hole sizes:
+
+    Toroid:       0.325 (3/8)
+	12V xfrmr:    0.182 (8-32)
+	PSU:          0.169 (4.3mm, 6-32)
+	Defl. amp:    0.177 (4.5mm, 8-32)
+    CPU:          0.126 (3.2mm, 4-40)
+	DAC:          0.126 (3.2mm, 4-40)
+
+![case](attachments/clock_case_sloping.png)
+
+![top](attachments/clock_case_top.png)
+
+**2023-12-27**
+
+Use `make_list.c` and `test_pattern.asm` to generate various
+circles... loads of ripple.
+
+B+ 360V on scope (on PSU board).  Looks clean, only 200mV 60Hz ripple.
+Playing with circles.  Still seems to be some ripple.
+Odd, since the deflection output seem pretty stable on the scope.
+
+Looking at the -1200 supply with a 10:1 divider.  There is 30% ripple!
+Investigating... maybe bad caps?  Nope.  The issue is that the
+C5/C7/C9 chain has (by construction) massive ripple while the
+C3/C6/C8/C10 chain is GND referenced.  So on J14 (HV select) only the
+following are useful:
+
+    2 - S7
+	4 - S5
+	
+So, move the jumper from J14 1-4 to 1-4.  All good!  Working as
+well as ever.  Some tweaking on the display lists for the hands
+could help, if I can find the source code which generated it.
+
+**2023-12-16**
+
+Power supply seems to be working.  Connect CPU and fire up... boot
+loader and UMON come up OK, though some UMON features ("R") seem to
+crash. (umon is at 4800 baud on the bit-bang serial port).
+
+N.B. running on the power supply 12V.  Check on scope and ripple is
+small (<< 1V).
+
+Fire up the clock.  It works, BUT there is terrible flicker/ripple.
+Maybe something else got fried in the 5/13 event?  Need to investigate
+the behavior of the deflection amp.  Need a test pattern better than
+the clock, perhaps?
+
+First thing:  check 360V B+ with scope
+
 **2023-12-25**
 
 How to test?  Relay must be active to turn on HV, requires 12V plus
@@ -79,12 +157,15 @@ might have been the problem, but having `SDI` as a latched output seems safer.
 
 Updated UMON and bootloader.  Bootloader now has 6s delay, umon updated to `umon_new`.
 
-Fixed (?) the hardware.  nCS needs to be tied to nWR so nCS is high when nLDAC is asserted.  It seems to work now.
+Fixed (?) the hardware.  nCS needs to be tied to nWR so nCS is high
+when nLDAC is asserted.  It seems to work now.
 
 
 **2023-02-03**
 
-Added a '139 and '161 to the board to (in principle) allow for automatically loading 4 bytes into the X and Y DACs with 4 successive I/O writes.  Doesn't work.
+Added a '139 and '161 to the board to (in principle) allow for
+automatically loading 4 bytes into the X and Y DACs with 4 successive
+I/O writes.  Doesn't work.
 
 Here is the new address table
 
@@ -159,7 +240,9 @@ Some pretty significant issues:
 
 Some thoughts:
 
-* route A1, A2 from the CPU board up on a couple of the lines on the keyboard connector, so we can do proper decoding in the '138.  This would speed things up a lot
+* route A1, A2 from the CPU board up on a couple of the lines on the
+  keyboard connector, so we can do proper decoding in the '138.  This
+  would speed things up a lot
 * wire some logic so nCS=H and nLDAC=L to update both DACs simultaneously
 
 
