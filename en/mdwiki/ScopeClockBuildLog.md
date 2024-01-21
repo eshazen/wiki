@@ -12,6 +12,21 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## Build Log
 
+**2024-01-21**
+
+Assemble and test the new DAC board.  Test/working:
+
+* LEDs (ok)
+* Shaft encoder (ok)
+* Switches (ok)
+* DACs (ok)
+* HV enable (ok)
+* Z-axis out (ok)
+
+Voltage regulator on CPU getting really hot so added a heatsink.
+
+Wrote a little test suite in `software/dac_v2_tests` to test above stuff.
+
 **2023-12-29**
 
 More case ideas:
