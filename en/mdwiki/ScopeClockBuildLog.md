@@ -4,12 +4,22 @@ Up: [ScopeClock](ScopeClock.md)
 
 ## TO DO
 
-* DAC board
-  * Carefully review all the ECOs and include them
-  * update layout, re-spin
+* Re-test with prototype firmware and new DAC board
 * EEPROM programming
   * figure out what's wrong
 
+## Working firmware spec
+
+We have two buttons, 3 LEDs and a shaft encoder to work with (plus of
+course the CRT display!)  Desirable functions:
+
+* Time display with HV shutdown and timeout (weekly schedule?)
+ * Analog vs digital display with date, possibly other text info
+* Control options:
+ * Possible WiFi connection via "WiFi UART for nntp update
+ * Time set via buttons / encoder
+ * Options set via buttons / encoder
+ 
 ## Build Log
 
 **2024-01-21**
