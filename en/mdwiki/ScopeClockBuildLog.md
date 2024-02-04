@@ -22,6 +22,16 @@ course the CRT display!)  Desirable functions:
  
 ## Build Log
 
+**2024-02-04**
+
+Designed side panels for 3mm acrylic and push to git as front/back/left/right DXFs.
+
+Dreaming about sound.  Maybe [6CY7](https://diyaudioprojects.com/Tubes/6CY7-SET-Amplifier/)
+amp using spare primary winding on Antek transformer with voltage doubler for B+.
+There is even a 6.3V spare winding for the 6CY7 filament.
+Output trans could be Hammond 125BSE.  Could use quite a bit of
+the 6CY9 white PCB amp design.
+
 **2024-01-21**
 
 Assemble and test the new DAC board.  Test/working:
