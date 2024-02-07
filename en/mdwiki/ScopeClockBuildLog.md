@@ -22,6 +22,15 @@ course the CRT display!)  Desirable functions:
  
 ## Build Log
 
+**2024-02-06**
+
+Re-thinking the sound.  
+A [6T9design](https://diyaudioprojects.com/Tubes/6T9-Tube-Amp-Kit/)
+would be cheaper, and would fit better in the confined space.  The
+output transformer can be the PT-31 from AES for $20.  B+ is spec'd at
+250V which is just right for a voltage doubler off the line.
+Plus I have some 6T9 in stock.
+
 **2024-02-04**
 
 Designed side panels for 3mm acrylic and push to git as front/back/left/right DXFs.
