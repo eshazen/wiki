@@ -1,24 +1,23 @@
 # BathroomAudio
-Would like to have (bluetooth?) sound in bathroom.  Sara wants no holes in wall or other ugly stuff.
 
-Ideas:
+Built a nice tube amp (see https://github.com/eshazen/6cy7-amp).
 
- * Build an amp based on e.g. LM1875
-   * Mount in (double?) wall box with bluetooth module (need access to bluetooth button though)
-     * start with surface mount box, with wall wart plugged into outlet
-   * Wires to attic
-   * Power from where?
- * Minimus-7 white speakers on wall brackets, with wires to attic
+Now, would like to have a box with a built-in spotify player plus a
+radio.  For the spotify player, an R-Pi seems like a good bet.
 
-## LM1875
+See:
+https://raspberrytips.com/play-spotify-on-raspberry-pi/
 
-* (Datasheet)[https://www.ti.com/lit/ds/symlink/lm1875.pdf]
-* (post about power)[https://linustechtips.com/topic/1134138-lm1875-power-supply/]
-* (AS-1218)[https://www.antekinc.com/content/AS-1218.pdf] tansformer... 100VA 2x18V
-* (many kits)[https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=LM1875+kit&_sacat=0] available
+Volumio seems like a reasonable choice.
+Can do it by just spending $$$.
 
-Power estimate for +/-25V supply is about 16W maximum, so a good heatink is needed.  See datasheet.
+## Parts
 
-## 6336 SET
-
-
+|----------------------------------|--------:|-------|
+| Item                             |   Price | Notes |
+| PI 4 B 2GB                       |  $45.00 |       |
+| SmartiPi Touch 2 case            |  $29.95 |       |
+| Pi Foundation display 7 in touch |  $79.95 |       |
+| Power supply 5.1V 3A USB C       |   $7.95 |       |
+| UGREEN USB DAC                   |   $9.99 |       |
+| Total                            | $175.00 |       |
