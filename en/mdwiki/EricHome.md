@@ -22,6 +22,7 @@
  * [TubeBoomBox](TubeBoomBox.md) (built)
  * [GretchensAmp](GretchensAmp.md) -- Amp for my sister Gretchen (var on Marblewood, built!)
  * [BedroomAmp](BedroomAmp.md) -- 6CY7 on PC board for the bedroom (built on PCB)
+ * [EPICAmp](EpicAmp.md) -- Ideas for a stero amp for EPIC
 
 ### Other
 
