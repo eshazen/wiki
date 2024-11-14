@@ -8,7 +8,7 @@ Harvested from EDF wiki for the most part
 * [Arduino to Native C](ArduinoToNativeC.md)
 * [Arduino Tricks](ArduinoTricks.md)
 * [Arduino Zero](ArduinoZero.md)
-
+* [ATTinyCore](ATTinyCore.md)
 
 ### Programming
 
