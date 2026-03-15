@@ -31,6 +31,7 @@
 
 ### Ideas for new projects (tubes)
 
+ * [OtherClocks](OtherClocks.md) -- other clock projects
  * [OtherTubeAmps](OtherTubeAmps.md) -- collection page for ideas
  * [6V6PPAmp](6V6PPAmp.md) -- 10WPC old-school 6V6 push-pull (partial PCB designs)
  * [NixieClock](NixieClock.md) -- old and new projects.  New version underway in late 2019!
